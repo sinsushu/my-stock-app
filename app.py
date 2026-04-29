@@ -60,7 +60,7 @@ if st.sidebar.button("開始分析"):
                           annotation_text=label, annotation_position="top left")
 
         fig.update_layout(title=f"{ticker} 走勢與黃金分割位", height=600, xaxis_rangeslider_visible=False)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True,key="stock_fibonacci_chart")
         # --- 在圖表下方加入策略提醒 ---
         st.divider() # 加入一條橫線區隔
         st.subheader("💡 Fibonacci 交易策略提醒")
